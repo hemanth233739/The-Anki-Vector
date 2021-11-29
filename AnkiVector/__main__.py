@@ -65,7 +65,7 @@ import AnkiVector.modules.sql.users_sql as sql
 
 PM_START_TEXT = """
 ───「 Aiger Akabane 」───
-*Whassup! {},*
+*Whassup! ,*
 *I am a Beyblade themed advance group management bot with a lot of New Features.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 ✵ Checkout The Help Buttons To Check My Abilities ✵✵
@@ -111,14 +111,13 @@ Support them  [HG](t.me/HEMANTHGAMING1K)"""
 
 HELP_MSG = "Contact me in PM to get the list of possible commands."
 HELP_IMG = "https://telegra.ph/file/e35c4378f58e8909ef7ac.jpg"
-
+AIGER_IMG = "https://telegra.ph/file/65cf2b986456b5de9dba0.jpg"
 
 IMPORTED = {}
 MIGRATEABLE = []
 HELPABLE = {}
 STATS = []
-USER_INFO = []
-USER_BOOK = []
+USER_INFO = [] USER_BOOK = []
 DATA_IMPORT = []
 DATA_EXPORT = []
 
@@ -226,19 +225,15 @@ def start(update: Update, context: CallbackContext):
         else:
             update.effective_user.first_name
             update.effective_message.reply_photo(
-                ANKIVECTOR_IMG, 
-                PM_START_TEXT.format(
-                    escape_markdown(first_name),
-                    escape_markdown(uptime),
-                    sql.num_users(),
-                    sql.num_chats()),                        
+                ANKIVECTOR_IMG,
+                caption=PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
             )
     else:
         update.effective_message.reply_photo(
-             ANKIVECTOR_IMG, 
+                      , 
             "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>".format(
                 uptime
             ),
