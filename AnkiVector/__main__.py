@@ -231,7 +231,8 @@ def start(update: Update, context: CallbackContext):
                 timeout=60,
             )
     else:
-        update.effective_message.reply_text(
+        update.effective_message.reply_photo(
+             ANKIVECTOR_IMG, 
             "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>".format(
                 uptime
             ),
@@ -529,8 +530,8 @@ def get_help(update, context):
                 ),
             )
             return
-        update.effective_message.reply_text(
-            "HELP_IMG","HELP_MSG",
+        update.effective_message.reply_photo(
+            HELP_IMG, HELP_MSG, 
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
