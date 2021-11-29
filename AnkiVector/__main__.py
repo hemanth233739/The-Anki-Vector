@@ -107,8 +107,8 @@ DONATE_STRING = """Heya, glad to hear you want to donate!
 You can donate to the original writer's of the Base code,
 Support them  [HG](t.me/HEMANTHGAMING1K)"""
 
-HELP_MSG
-HELP_IMG
+HELP_MSG = "Contact me in PM to get the list of possible commands."
+HELP_IMG = "https://telegra.ph/file/c42cce32952a2cc9ddf66.mp4"
 
 
 IMPORTED = {}
@@ -530,7 +530,7 @@ def get_help(update, context):
             )
             return
         update.effective_message.reply_text(
-            "Contact me in PM to get the list of possible commands.",
+            "HELP_IMG","HELP_MSG",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
@@ -808,7 +808,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "I am now online!✨")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "[I am now online](https://telegra.ph/file/c42cce32952a2cc9ddf66.mp4)")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
