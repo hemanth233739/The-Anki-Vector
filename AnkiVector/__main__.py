@@ -107,6 +107,10 @@ DONATE_STRING = """Heya, glad to hear you want to donate!
 You can donate to the original writer's of the Base code,
 Support them  [HG](t.me/HEMANTHGAMING1K)"""
 
+HELP_MSG
+HELP_IMG
+
+
 IMPORTED = {}
 MIGRATEABLE = []
 HELPABLE = {}
