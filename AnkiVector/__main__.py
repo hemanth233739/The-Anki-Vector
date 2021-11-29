@@ -71,25 +71,25 @@ PM_START_TEXT = """
 
 buttons = [
     [
-        InlineKeyboardButton(text="📌ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ", url="https://t.me/ankivectorUpdates"),
-        InlineKeyboardButton(text="🖲 ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ", url="https://t.me/AnkiSupport_Official"),
+        InlineKeyboardButton(text="🛠️ᴜᴘᴅᴀᴛᴇꜱ🛠️ ", url="https://t.me/hgbotsupdates"),
+        InlineKeyboardButton(text="❤️ ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ", url="https://t.me/AigerAkabaneBotsupport"),
     ],
     [
-        InlineKeyboardButton(text="📜 ꜱᴏᴜʀᴄᴇ ᴄᴏᴅᴇ", url="https://www.youtube.com/watch?v=fXXEcAkWAFU"),
-        InlineKeyboardButton(text="❔ ʜᴇʟᴘ", url="http://t.me/TheAnkiVectorbot?start=help"),
+        InlineKeyboardButton(text="ᴍʏ    ғʀɪᴇɴᴅ", url="https://t.me/HG_FREE_BOT"),
+        InlineKeyboardButton(text="❔ ʜᴇʟᴘ", url="http://t.me/AigerAkabaneBot?start=help"),
     ],
     [
         InlineKeyboardButton(
-            text="➕ ᴀᴅᴅ ᴀɴᴋɪ ᴠᴇᴄᴛᴏʀ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕", url="t.me/TheAnkiVectorbot?startgroup=true"
+            text="➕ ᴀᴅᴅ ᴀɴᴋɪ ᴠᴇᴄᴛᴏʀ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕", url="t.me/AigerAkabaneBot?startgroup=true"
         ),
     ],
 ]
 
 
-ANKIVECTOR_IMG = "https://telegra.ph/file/75579c20520fc79f5b68d.jpg"
+ANKIVECTOR_IMG = "https://telegra.ph/file/d2931ff15cf972fb02ab2.jpg"
 
 HELP_STRINGS = f"""
-*Main Commands :* [🤖](https://telegra.ph/file/e10a45d0433a1ab6fed7b.jpg)
+*Main Commands :* [👻](https://telegra.ph/file/b211f9b5b480e32eca5a9.jpg)
 
 ✪ /start: Starts me! You've probably already used this.
 ✪ /help: Click this, I'll let you know about myself!
@@ -105,7 +105,7 @@ HELP_STRINGS = f"""
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 You can donate to the original writer's of the Base code,
-Support them  [Damantha Jasinghe](t.me/Damantha_Jasinghe)"""
+Support them  [HG](t.me/HEMANTHGAMING1K)"""
 
 IMPORTED = {}
 MIGRATEABLE = []
