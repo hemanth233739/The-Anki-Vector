@@ -63,10 +63,13 @@ from AnkiVector.modules.helper_funcs.misc import paginate_modules
 from AnkiVector.modules.helper_funcs.readable_time import get_readable_time
 
 PM_START_TEXT = """
-𝙃𝙚𝙡𝙡𝙤 𝙩𝙝𝙚𝙧𝙚, 𝙄'𝙢 [Aiger😈](t.me/AigerAkabaneBot) 
-𝙄'𝙢 𝙖 𝙋𝙤𝙬𝙚𝙧𝙛𝙪𝙡 ʙᴇʏʙʟᴀᴅᴇʀ 𝙜𝙧𝙤𝙪𝙥 𝙢𝙖𝙣𝙖𝙜𝙚𝙧 𝙗𝙤𝙩 𝙒𝙞𝙩𝙝 𝘾𝙤𝙤𝙡 𝙈𝙤𝙙𝙪𝙡𝙚𝙨. 𝙈𝙖𝙙𝙚 𝙗𝙮 [HG BOTS](t.me/hgbotsupportgroup)
-𝙃𝙞𝙩 /help 𝙩𝙤 𝙛𝙞𝙣𝙙 𝙢𝙮 𝙡𝙞𝙨𝙩 𝙤𝙛 𝙖𝙫𝙖𝙞𝙡𝙖𝙗𝙡𝙚 𝙘𝙤𝙢𝙢𝙖𝙣𝙙𝙨 🕹
- 
+*Whassup! {},*
+*I am an Anime themed advance group management bot with a lot of New Features.*
+➖➖➖➖➖➖➖➖➖➖➖➖➖
+♆ *Uptime:* {}
+♆ {} *users, across* {} *chats.*
+➖➖➖➖➖➖➖➖➖➖➖➖➖
+☫ Checkout The Help Buttons To Check My Abilities 𖤐𖤐
 """
 
 buttons = [
@@ -108,7 +111,7 @@ You can donate to the original writer's of the Base code,
 Support them  [HG](t.me/HEMANTHGAMING1K)"""
 
 HELP_MSG = "Contact me in PM to get the list of possible commands."
-HELP_IMG = "https://telegra.ph/file/c42cce32952a2cc9ddf66.mp4"
+HELP_VIDEO = "https://telegra.ph/file/c42cce32952a2cc9ddf66.mp4"
 
 
 IMPORTED = {}
@@ -531,7 +534,7 @@ def get_help(update, context):
             )
             return
         update.effective_message.reply_photo(
-            HELP_IMG, HELP_MSG, 
+            HELP_VIDEO, HELP_MSG, 
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
@@ -809,7 +812,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "[I am now online](https://telegra.ph/file/c42cce32952a2cc9ddf66.mp4)")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "[I am now online](https://telegra.ph/file/c42cce32952a2cc9ddf66.mp4)", parse_mode=ParseMode.MARKDOWN) 
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
