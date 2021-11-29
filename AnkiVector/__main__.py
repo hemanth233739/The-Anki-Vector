@@ -228,9 +228,8 @@ def start(update: Update, context: CallbackContext):
 
         else:
             update.effective_user.first_name
-            update.effective_message.reply_photo(
-                ANKIVECTOR_IMG,
-                caption=PM_START_TEXT.format(
+            update.effective_message.reply_text(
+                PM_START_TEXT.format(
                     escape_markdown(first_name),
                     escape_markdown(uptime),
                     sql.num_users(),
