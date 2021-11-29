@@ -63,13 +63,11 @@ from AnkiVector.modules.helper_funcs.misc import paginate_modules
 from AnkiVector.modules.helper_funcs.readable_time import get_readable_time
 
 PM_START_TEXT = """
+───「 Aiger Akabane 」───
 *Whassup! {},*
-*I am an Anime themed advance group management bot with a lot of New Features.*
+*I am a Beyblade themed advance group management bot with a lot of New Features.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-♆ *Uptime:* {}
-♆ {} *users, across* {} *chats.*
-➖➖➖➖➖➖➖➖➖➖➖➖➖
-☫ Checkout The Help Buttons To Check My Abilities 𖤐𖤐
+✵ Checkout The Help Buttons To Check My Abilities ✵✵
 """
 
 buttons = [
