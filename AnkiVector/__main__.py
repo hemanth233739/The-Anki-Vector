@@ -69,9 +69,6 @@ PM_START_TEXT = """
 *I am a Beyblade themed advance group management bot with a lot of New Features.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 ✵ Checkout The Help Buttons To Check My Abilities ✵✵
-uptime - {}
-users - {}
-chats - {}
 """
 
 buttons = [
