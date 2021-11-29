@@ -61,6 +61,7 @@ from AnkiVector.modules.helper_funcs.alternate import typing_action
 from AnkiVector.modules.helper_funcs.chat_status import is_user_admin
 from AnkiVector.modules.helper_funcs.misc import paginate_modules
 from AnkiVector.modules.helper_funcs.readable_time import get_readable_time
+import AnkiVector.modules.sql.users_sql as sql
 
 PM_START_TEXT = """
 ───「 Aiger Akabane 」───
@@ -68,6 +69,9 @@ PM_START_TEXT = """
 *I am a Beyblade themed advance group management bot with a lot of New Features.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 ✵ Checkout The Help Buttons To Check My Abilities ✵✵
+uptime - {}
+users - {}
+chats - {}
 """
 
 buttons = [
@@ -226,7 +230,11 @@ def start(update: Update, context: CallbackContext):
             update.effective_user.first_name
             update.effective_message.reply_photo(
                 ANKIVECTOR_IMG,
-                caption=PM_START_TEXT,
+                caption=PM_START_TEXT.format(
+                    escape_markdown(first_name),
+                    escape_markdown(uptime),
+                    sql.num_users(),
+                    sql.num_chats()),                        
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
