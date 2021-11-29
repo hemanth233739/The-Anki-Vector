@@ -111,7 +111,7 @@ You can donate to the original writer's of the Base code,
 Support them  [HG](t.me/HEMANTHGAMING1K)"""
 
 HELP_MSG = "Contact me in PM to get the list of possible commands."
-HELP_VIDEO = "https://telegra.ph/file/c42cce32952a2cc9ddf66.mp4"
+HELP_IMG = "https://telegra.ph/file/e35c4378f58e8909ef7ac.jpg"
 
 
 IMPORTED = {}
@@ -534,7 +534,7 @@ def get_help(update, context):
             )
             return
         update.effective_message.reply_photo(
-            HELP_VIDEO, HELP_MSG, 
+            HELP_IMG, HELP_MSG, 
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
